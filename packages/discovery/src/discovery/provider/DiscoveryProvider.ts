@@ -1,5 +1,11 @@
 import { EtherscanLikeClient } from '@l2beat/shared'
-import { Bytes, EthereumAddress, Hash256 } from '@l2beat/shared-pure'
+import {
+  assert,
+  Bytes,
+  EthereumAddress,
+  Hash256,
+  UnixTime,
+} from '@l2beat/shared-pure'
 import { providers } from 'ethers'
 
 import { jsonToHumanReadableAbi } from './jsonToHumanReadableAbi'
@@ -89,6 +95,18 @@ export class DiscoveryProvider {
 
   async getContractDeploymentTx(address: EthereumAddress) {
     return this.etherscanLikeClient.getContractDeploymentTx(address)
+  }
+
+  async getFirstTxTimestamp(address: EthereumAddress) {
+    return this.etherscanLikeClient.getFirstTxTimestamp(address)
+  }
+
+  async getDeploymentTimestamp(address: EthereumAddress) {
+    const txHash = await this.getContractDeploymentTx(address)
+    const tx = await this.provider.getTransaction(txHash.toString())
+    assert(tx.blockNumber, 'Transaction returned without a block number.')
+    const block = await this.provider.getBlock(tx.blockNumber)
+    return new UnixTime(block.timestamp)
   }
 
   async getDeployer(address: EthereumAddress) {

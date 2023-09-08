@@ -11,6 +11,7 @@ import { Logger } from '../../tools'
 import {
   ContractCreatorAndCreationTxHashResult,
   ContractSourceResult,
+  TransactionListResult,
 } from '../etherscan/model'
 import { HttpClient } from '../HttpClient'
 import { parseEtherscanResponse } from './model'
@@ -94,6 +95,21 @@ export class EtherscanLikeClient {
     })
 
     return ContractCreatorAndCreationTxHashResult.parse(response)[0].txHash
+  }
+
+  async getFirstTxTimestamp(address: EthereumAddress): Promise<UnixTime> {
+    const response = await this.call('account', 'txlist', {
+      address: address.toString(),
+      startblock: '0',
+      endblock: '999999999',
+      page: '1',
+      offset: '1',
+      sort: 'asc',
+    })
+
+    return new UnixTime(
+      parseInt(TransactionListResult.parse(response)[0].timeStamp, 10),
+    )
   }
 
   async call(module: string, action: string, params: Record<string, string>) {

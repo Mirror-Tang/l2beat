@@ -1,9 +1,9 @@
 {
-  "chain": "ethereum",
   "name": "arbitrum",
-  "blockNumber": 17356931,
+  "chain": "ethereum",
+  "blockNumber": 18091802,
   "configHash": "0x4c7c54af54289435b70f3655207c68c61a111145ed111b7c9010d930e775e657",
-  "version": 1,
+  "version": 2,
   "contracts": [
     {
       "name": "OutboxV2",
@@ -13,6 +13,7 @@
         "implementation": "0x0eA7372338a589e7f0b00E463a53AA464ef04e17",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
         "l2ToL1BatchNum": 0,
@@ -32,6 +33,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1622243344,
       "values": {
         "implementation": "0xc4940069140142236D4065b866018f7b2BeC77fD",
         "owner": "0xC12BA48c781F6e392B49Db2E25Cd0c28cD77531A"
@@ -45,8 +47,9 @@
         "implementation": "0xD03bFe2CE83632F4E618a97299cc91B1335BB2d9",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
-        "batchCount": 215762,
+        "batchCount": 336595,
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
         "DATA_AUTHENTICATED_FLAG": "0x40",
         "HEADER_LENGTH": 40,
@@ -54,7 +57,7 @@
         "maxTimeVariation": [5760, 12, 86400, 3600],
         "rollup": "0x5eF0D09d1E6204141B4d37530808eD19f60FBa35",
         "setIsBatchPosterCount": 3,
-        "totalDelayedMessagesRead": 877975
+        "totalDelayedMessagesRead": 1066811
       },
       "derivedName": "SequencerInbox"
     },
@@ -65,6 +68,7 @@
         "type": "gnosis safe",
         "masterCopy": "0xd9Db270c1B5E3Bd161E8c8503c55cEABeE709552"
       },
+      "sinceTimestamp": 1678771823,
       "values": {
         "domainSeparator": "0xe7aee79ca5c88cfa7da718e084d199a66001a7d10e0b1be3933b4dacf212dcc3",
         "getChainId": 1,
@@ -94,6 +98,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1661455968,
       "values": {
         "prover0": "0x499A4f574f2e4F8837E242adEc86223Ef7DeEfcC",
         "proverHostIo": "0xb965b08A826D4C7634e0Df4c5eF5E1d1f9b5D13A",
@@ -109,6 +114,7 @@
         "implementation": "0x86f0cf42Ad673B3D666d103E009EC142D1298a17",
         "admin": "0x5613AF0474EB9c528A34701A5b1662E3C8FA0678"
       },
+      "sinceTimestamp": 1678968515,
       "values": {
         "accessControl": {
           "DEFAULT_ADMIN_ROLE": {
@@ -137,7 +143,8 @@
       "address": "0x499A4f574f2e4F8837E242adEc86223Ef7DeEfcC",
       "upgradeability": {
         "type": "immutable"
-      }
+      },
+      "sinceTimestamp": 1661455916
     },
     {
       "name": "Inbox",
@@ -147,6 +154,7 @@
         "implementation": "0x5aED5f8A1e3607476F1f81c3d8fe126deB0aFE94",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1622243344,
       "values": {
         "allowListEnabled": false,
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
@@ -161,6 +169,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
         "owner": "0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"
       },
@@ -172,6 +181,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1678968395,
       "values": {
         "owner": "0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"
       },
@@ -185,6 +195,7 @@
         "implementation": "0x806421D09cDb253aa9d128a658e60c0B95eFFA01",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
         "rollup": "0x5eF0D09d1E6204141B4d37530808eD19f60FBa35"
@@ -196,6 +207,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1661456194,
       "values": {
         "owner": "0x0000000000000000000000000000000000000000"
       }
@@ -209,6 +221,7 @@
         "adminImplementation": "0x72f193d0F305F532C87a4B9D0A2F407a3F4f585f",
         "userImplementation": "0xA0Ed0562629D45B88A34a342f20dEb58c46C15ff"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
         "baseStake": "1000000000000000000",
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
@@ -217,12 +230,12 @@
         "confirmPeriodBlocks": 45818,
         "currentRequiredStake": "1000000000000000000",
         "extraChallengeTimeBlocks": 200,
-        "firstUnresolvedNode": 5488,
+        "firstUnresolvedNode": 7951,
         "inbox": "0x4Dbd4fc535Ac27206064B68FfCf827b0A60BAB3f",
         "isERC20Enabled": false,
         "lastStakeBlock": 15447818,
-        "latestConfirmed": 5487,
-        "latestNodeCreated": 5641,
+        "latestConfirmed": 7950,
+        "latestNodeCreated": 8104,
         "loserStakeEscrow": "0x5b11BDC6eF32cE261A39f58122E301D59FC05677",
         "minimumAssertionPeriod": 75,
         "outbox": "0x0B9857ae2D4A3DBe74ffE1d7DF045bb7F96E4840",
@@ -256,6 +269,7 @@
         "implementation": "0x263a68002876E307804168795519da0B32CC62fE",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1622243344,
       "values": {
         "beacon": "0x14797f5432f699Cb4d4dB04DF599B74952d78d7b",
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
@@ -279,6 +293,7 @@
         "implementation": "0x52595021fA01B3E14EC6C88953AFc8E35dFf423c",
         "admin": "0x9aD46fac0Cf7f790E5be05A0F15223935A0c0aDa"
       },
+      "sinceTimestamp": 1623784095,
       "values": {
         "counterpartGateway": "0x5288c571Fd7aD117beA99bF60FE0846C4E84F933",
         "defaultGateway": "0xa3A7B6F88361F48403514059F1F16C8E78d60EeC",
@@ -296,6 +311,7 @@
         "implementation": "0x360861b7b245c968128F0a53d281aDb1Df760711",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1630296149,
       "values": {
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
         "isMaster": false,
@@ -319,6 +335,7 @@
         "implementation": "0x1066CEcC8880948FE55e427E94F1FF221d626591",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
         "activeOutbox": "0x0000000000000000000000000000000000000000",
         "allowedDelayedInboxList": [
@@ -330,11 +347,11 @@
           "0x667e23ABd27E623c11d4CC00ca3EC4d0bD63337a",
           "0x760723CD2e632826c38Fef8CD438A4CC7E7E1A40"
         ],
-        "delayedMessageCount": 877986,
+        "delayedMessageCount": 1066821,
         "rollup": "0x5eF0D09d1E6204141B4d37530808eD19f60FBa35",
         "sequencerInbox": "0x1c479675ad559DC151F6Ec7ed3FbF8ceE79582B6",
-        "sequencerMessageCount": 215762,
-        "sequencerReportedSubMessageCount": 73080122
+        "sequencerMessageCount": 336595,
+        "sequencerReportedSubMessageCount": 106993908
       },
       "derivedName": "Bridge"
     },
@@ -344,6 +361,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1661456194,
       "values": {
         "owner": "0x3ffFbAdAF827559da092217e474760E2b2c3CeDd",
         "template": "0x5Bc5FB83950bBbF156E433c5c098bFe533Db4021"
@@ -355,6 +373,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1623784062,
       "values": {
         "owner": "0x3ffFbAdAF827559da092217e474760E2b2c3CeDd"
       },
@@ -366,6 +385,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1661456147,
       "values": {
         "ARBITRUM_STAKERS": [
           [
@@ -382,7 +402,8 @@
       "address": "0xA10c7CE4b876998858b1a9E12b10092229539400",
       "upgradeability": {
         "type": "immutable"
-      }
+      },
+      "sinceTimestamp": 1632133470
     },
     {
       "name": "L1ERC20Gateway",
@@ -392,6 +413,7 @@
         "implementation": "0xb4299A1F5f26fF6a98B7BA35572290C359fde900",
         "admin": "0x9aD46fac0Cf7f790E5be05A0F15223935A0c0aDa"
       },
+      "sinceTimestamp": 1623784100,
       "values": {
         "cloneableProxyHash": "0x4b11cb57b978697e0aec0c18581326376d6463fd3f6699cbe78ee5935617082d",
         "counterpartGateway": "0x09e9222E96E7B4AE2a407B98d48e330053351EEe",
@@ -407,14 +429,16 @@
       "address": "0xb556F3Bb0FdCFeAf81a1c393e024a69a3327B676",
       "upgradeability": {
         "type": "immutable"
-      }
+      },
+      "sinceTimestamp": 1661455968
     },
     {
       "name": "OneStepProverHostIo",
       "address": "0xb965b08A826D4C7634e0Df4c5eF5E1d1f9b5D13A",
       "upgradeability": {
         "type": "immutable"
-      }
+      },
+      "sinceTimestamp": 1661455968
     },
     {
       "name": "OutboxEntry",
@@ -422,6 +446,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1630185130,
       "values": {
         "isMaster": true,
         "numRemaining": 0,
@@ -436,6 +461,7 @@
         "implementation": "0xC8D26aB9e132C79140b3376a0Ac7932E4680Aa45",
         "admin": "0x9aD46fac0Cf7f790E5be05A0F15223935A0c0aDa"
       },
+      "sinceTimestamp": 1623867835,
       "values": {
         "counterpartGateway": "0x096760F208390250649E3e8763348E783AEF5562",
         "inbox": "0x4Dbd4fc535Ac27206064B68FfCf827b0A60BAB3f",
@@ -450,7 +476,8 @@
       "address": "0xd315Ac3a82E8EDAA84b347F478e0F59801747970",
       "upgradeability": {
         "type": "immutable"
-      }
+      },
+      "sinceTimestamp": 1661455968
     },
     {
       "name": "L1DaiGateway",
@@ -458,6 +485,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1632133584,
       "values": {
         "counterpartGateway": "0x467194771dAe2967Aef3ECbEDD3Bf9a310C76C65",
         "inbox": "0x4Dbd4fc535Ac27206064B68FfCf827b0A60BAB3f",
@@ -476,6 +504,7 @@
       "upgradeability": {
         "type": "immutable"
       },
+      "sinceTimestamp": 1622243344,
       "values": {
         "owner": "0xC12BA48c781F6e392B49Db2E25Cd0c28cD77531A"
       }
@@ -488,6 +517,7 @@
         "implementation": "0x1c78B622961f27Ccc2f9BA65E2ba5d5eB301a445",
         "admin": "0x554723262467F125Ac9e1cDFa9Ce15cc53822dbD"
       },
+      "sinceTimestamp": 1661457944,
       "values": {
         "bridge": "0x8315177aB297bA92A06054cE80a67Ed4DBd7ed3a",
         "osp": "0x3E1f62AA8076000c3218493FE3e0Ae40bcB9A1DF",
@@ -504,6 +534,7 @@
         "implementation": "0x962d70fc48F3465404bC77B03f104746B25a1d1b",
         "admin": "0x5613AF0474EB9c528A34701A5b1662E3C8FA0678"
       },
+      "sinceTimestamp": 1678968515,
       "values": {
         "accessControl": {
           "DEFAULT_ADMIN_ROLE": {
